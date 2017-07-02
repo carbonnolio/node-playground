@@ -29,5 +29,8 @@
     "eslint": "^4.1.0",
     "eslint-plugin-import": "^2.6.0",
     "eslint-watch": "^3.1.2"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
   }
 }
