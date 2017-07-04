@@ -1,6 +1,8 @@
 import os from 'os';
 import { GetResource } from './eventsDemo';
 import { Resource } from './resource';
+import { downloadAndSaveGzip } from './pipeDemo';
+import processDemo from './processDemo';
 
 const toMb = (f) => Math.round((f / 1024 / 1024) * 100) / 100;
 
@@ -35,3 +37,7 @@ r1.on('data', (d) => {
 r1.on('end', (t) => {
   console.log(`r1 Done with ${t} data events.` );
 });
+
+downloadAndSaveGzip('https://www.citi.com/credit-cards/compare-credit-cards/citi.action?ID=view-all-credit-cards', 'boa.html');
+
+//processDemo();
