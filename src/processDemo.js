@@ -11,6 +11,3 @@ process.on('uncaughtException', (err) => {
 
 // Keep the event loop busy.
 process.stdin.resume();
-
-// Undrfined method.
-console.dog();
